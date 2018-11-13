@@ -74,6 +74,7 @@ class Authentication {
     }
 
     public function validate() {
+        //testing purpose
         $token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImp0aSI6IjRmMWcyM2ExMmFhIn0.eyJpc3MiOiJodHRwOlwvXC9leGFtcGxlLmNvbSIsImF1ZCI6InN1cGVyX2FkbWlufG1vZGVyYXRvcnxjb250ZW50X21hbmFnZXIiLCJqdGkiOiI0ZjFnMjNhMTJhYSIsImlhdCI6MTU0MjA2OTU4MCwibmJmIjoxNTQyMDY5NTgwLCJleHAiOjE1NDIwNjk2NDAsInVpZCI6MX0.LCF6A2n1jugpC7ZVpLRs7s7Si9AnTn1y_rIsUy1APxA';
         $token = (new Parser())->parse((string) $token);
 
